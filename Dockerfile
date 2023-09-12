@@ -9,3 +9,7 @@ RUN switch_python 3.11
 RUN curl -o /tmp/integration_requirements.txt https://raw.githubusercontent.com/ansible/galaxy_ng/master/integration_requirements.txt
 RUN python3 -m venv /tmp/gng_testing
 RUN python3 -m pip install -r /tmp/integration_requirements.txt
+
+RUN curl -o /tmp/requirements.common.txt https://raw.githubusercontent.com/ansible/galaxy_ng/master/requirements/requirements.common.txt
+RUN python3 -m pip install -r /tmp/requirements.common.txt
+
