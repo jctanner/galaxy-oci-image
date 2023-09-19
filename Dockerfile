@@ -13,3 +13,4 @@ RUN python3 -m pip install -r /tmp/integration_requirements.txt
 RUN curl -o /tmp/requirements.common.txt https://raw.githubusercontent.com/ansible/galaxy_ng/master/requirements/requirements.common.txt
 RUN python3 -m pip install -r /tmp/requirements.common.txt
 
+RUN python3 -m pip uninstall pulp-glue
